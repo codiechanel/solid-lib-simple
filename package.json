@@ -1,29 +1,48 @@
 {
-  "name": "solid-lib-simple",
+  "name": "@codiechanel/solid-lib-simple",
   "description": "Personal Library",
   "author": "codiechanel",
-
   "license": "MIT",
-  "version": "0.1.5",
-
+  "version": "0.3.2",
   "repository": {
     "type": "git",
     "url": "https://github.com/codiechanel/solid-lib-simple.git"
   },
   "type": "module",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "./index.js",
+  "types": "./index.d.ts",
   "exports": {
     ".": {
-      "solid": "./dist/index.jsx",
-      "default": "./dist/index.js"
+      "solid": "./index.jsx",
+      "import": "./index.js",
+      "browser": "./index.js"
+    },
+    "./": {
+      "solid": "./index.jsx",
+      "import": "./index.js",
+      "browser": "./index.js"
+    },
+    "./Great": {
+      "solid": "./Great/index.jsx",
+      "import": "./Great/index.js",
+      "browser": "./Great/index.js"
+    },
+    "./Button": {
+      "solid": "./Button/index.jsx",
+      "import": "./Button/index.js",
+      "browser": "./Button/index.js"
     }
   },
   "files": [
-    "dist"
+    "Button",
+    "Great",
+    "src"
   ],
   "sideEffects": false,
   "scripts": {
+    "tsc-build": "rimraf types && tsc --declaration --declarationDir types --emitDeclarationOnly",
+    "build:types": "tsc --emitDeclarationOnly",
+    "npm-publish": "npm publish",
     "build": "tsc && rollup -c",
     "prepublishOnly": "npm run build",
     "test": "jest && npm run test:types",
@@ -35,6 +54,7 @@
     "@babel/core": "^7.14.6",
     "@babel/preset-typescript": "^7.14.5",
     "@rollup/plugin-babel": "5.3.0",
+    "@rollup/plugin-multi-entry": "^4.1.0",
     "@rollup/plugin-node-resolve": "13.0.0",
     "@types/jest": "^26.0.16",
     "@types/node": "^15.12.4",
@@ -51,5 +71,10 @@
   },
   "jest": {
     "preset": "solid-jest/preset/browser"
+  },
+  "dependencies": {
+    "rimraf": "^3.0.2",
+    "rollup-plugin-multi-input": "^1.3.1",
+    "vite-plugin-import": "^0.4.0"
   }
 }

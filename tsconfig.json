@@ -4,10 +4,11 @@
     "target": "esnext",
     "newLine": "LF",
     "moduleResolution": "node",
+    "noImplicitAny": false,
     "strict": true,
     "jsx": "preserve",
     "jsxImportSource": "solid-js",
-    "outDir": "./dist",
+    "outDir": "./",
     "module": "esnext"
   },
   "include": [
