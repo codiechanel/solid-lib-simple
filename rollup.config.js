@@ -31,6 +31,7 @@ export default {
     }),
     multiInput(),
     babel({
+      babelrc: false,
       extensions: [".js", ".ts", ".tsx"],
       babelHelpers: "bundled",
       presets: ["solid", "@babel/preset-typescript"],

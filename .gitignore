@@ -4,3 +4,6 @@ dist/
 coverage/
 solid-app-router-*.tgz
 /.npmrc
+.cache
+
+
