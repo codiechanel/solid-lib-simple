@@ -1,4 +1,4 @@
 
 export default function Great() {
-  return <div>Great super nice hmm surely</div>;
+  return <div>yes super nice hmm surely</div>;
 }

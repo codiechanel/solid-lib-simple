@@ -7,6 +7,9 @@ solid-app-router-*.tgz
 .cache
 Great
 Button
+Chakra
+Hooks
+Tailwind
 index.js
 index.d.ts
 index.jsx
