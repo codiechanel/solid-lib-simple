@@ -6,7 +6,7 @@ import multiInput from 'rollup-plugin-multi-input';
 export default {
   input: ['src/**/*.tsx'],
   output: {
-    format: 'esm',
+    format: 'es',
     dir: './'
   },
   /*output: [

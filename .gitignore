@@ -5,5 +5,9 @@ coverage/
 solid-app-router-*.tgz
 /.npmrc
 .cache
-
+Great
+Button
+index.js
+index.d.ts
+index.jsx
 

@@ -5,7 +5,7 @@
     "newLine": "LF",
     "moduleResolution": "node",
     "noImplicitAny": false,
-    "strict": true,
+    "strict": false,
     "jsx": "preserve",
     "jsxImportSource": "solid-js",
     "outDir": "./",

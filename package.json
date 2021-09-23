@@ -3,7 +3,7 @@
   "description": "Personal Library",
   "author": "codiechanel",
   "license": "MIT",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/codiechanel/solid-lib-simple.git"
@@ -36,7 +36,10 @@
   "files": [
     "Button",
     "Great",
-    "src"
+    "src",
+    "index.js",
+    "index.d.ts",
+    "index.jsx"
   ],
   "sideEffects": false,
   "scripts": {
