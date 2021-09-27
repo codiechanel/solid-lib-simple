@@ -3,7 +3,7 @@ dist/
 .vscode/
 coverage/
 solid-app-router-*.tgz
-/.npmrc
+/.npmrcOld
 .cache
 Great
 Button

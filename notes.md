@@ -1,3 +1,6 @@
+"import": "./index.js",
+"browser": "./index.js"
+
 "types": "dist/index.d.ts",
 "types": "./types/index.d.ts",
 

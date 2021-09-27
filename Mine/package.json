@@ -1,0 +1,6 @@
+{
+  "name": "mine",
+  "private": true,
+  "main": "./index.jsx",
+  "types": "./index.d.ts"
+}

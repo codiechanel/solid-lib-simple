@@ -1,0 +1,6 @@
+{
+  "name": "chakra",
+  "private": true,
+  "main": "./index.jsx",
+  "types": "./index.d.ts"
+}

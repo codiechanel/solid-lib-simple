@@ -1,6 +1,6 @@
+/*export { default as Tailwind } from "./Tailwind";
+export { default as Chakra } from "./Chakra";*/
 
-export { default as Cool } from './Button';
-export { default as Great } from './Great';
-
-export * from './Great';
-export * from './Button';
+export default function Demo() {
+  return <div>Hello</div>;
+}
