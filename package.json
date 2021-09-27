@@ -3,7 +3,7 @@
   "description": "Personal Library",
   "author": "codiechanel",
   "license": "MIT",
-  "version": "0.3.97",
+  "version": "0.3.99",
   "repository": {
     "type": "git",
     "url": "https://github.com/codiechanel/solid-lib-simple.git"
@@ -38,6 +38,7 @@
     "Chakra",
     "Hooks",
     "Tailwind",
+    "Common",
     "Mine",
     "src",
     "index.d.ts",
