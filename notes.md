@@ -1,3 +1,5 @@
+"build:types": "tsc --emitDeclarationOnly",
+
 "import": "./index.js",
 "browser": "./index.js"
 

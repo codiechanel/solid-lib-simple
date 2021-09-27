@@ -3,7 +3,7 @@
   "description": "Personal Library",
   "author": "codiechanel",
   "license": "MIT",
-  "version": "0.3.95",
+  "version": "0.3.97",
   "repository": {
     "type": "git",
     "url": "https://github.com/codiechanel/solid-lib-simple.git"
@@ -18,7 +18,7 @@
     "./": {
       "solid": "./index.jsx"
     },
-     "./Tailwind": {
+    "./Tailwind": {
       "solid": "./Tailwind/index.jsx"
     },
     "./Chakra": {
@@ -47,10 +47,9 @@
   "sideEffects": false,
   "scripts": {
     "tsc-only": "tsc",
-
     "parcel-start": "parcel index.html --open",
-    "tsc-build": "rimraf types && tsc --declaration --declarationDir types --emitDeclarationOnly",
-    "build:types": "tsc --emitDeclarationOnly",
+    "tsc-build-types": "rimraf types && tsc --declaration --declarationDir types --emitDeclarationOnly",
+
     "npm-publish": "npm publish",
     "build": "tsc && rollup -c",
     "prepublishOnlyNo": "npm run build",
@@ -93,6 +92,7 @@
   },
   "dependencies": {
     "postcss": "^8.3.7",
+    "solid-icons": "^0.3.2",
     "solid-styled-components": "^0.27.3"
   }
 }

@@ -12,17 +12,25 @@ specifiers:
   babel-preset-solid: ^1.0.1
   jest: ^26.6.3
   parcel-bundler: ^1.12.5
+  postcss: ^8.3.7
   rimraf: ^3.0.2
   rollup: ^2.52.1
   rollup-plugin-multi-input: ^1.3.1
   rollup-plugin-terser: ^7.0.2
+  solid-icons: ^0.3.2
   solid-jest: ^0.1.1
-  solid-js: ^1.0.3
+  solid-js: ^1.0.0
+  solid-styled-components: ^0.27.3
   style-vendorizer: ^2.1.1
   tailwindcss: ^2.2.15
   twind: ^0.16.16
   typescript: ~4.3.4
   vite-plugin-import: ^0.4.0
+
+dependencies:
+  postcss: 8.3.7
+  solid-icons: 0.3.2_solid-js@1.1.5
+  solid-styled-components: 0.27.3_solid-js@1.1.5
 
 devDependencies:
   '@babel/core': 7.15.5
@@ -43,7 +51,7 @@ devDependencies:
   solid-jest: 0.1.1_98c3189e14dfd97cf1b067144a1b92ad
   solid-js: 1.1.5
   style-vendorizer: 2.1.1
-  tailwindcss: 2.2.15
+  tailwindcss: 2.2.15_postcss@8.3.7
   twind: 0.16.16_typescript@4.3.5
   typescript: 4.3.5
   vite-plugin-import: 0.4.0
@@ -3355,6 +3363,10 @@ packages:
       cssom: 0.3.8
     dev: true
 
+  /csstype/2.6.18:
+    resolution: {integrity: sha512-RSU6Hyeg14am3Ah4VZEmeX8H7kLwEEirXe6aU2IPfKNvhXwTflK5HQRDNI0ypQXoqmm+QPyG2IaPuQE5zMwSIQ==}
+    dev: false
+
   /csstype/3.0.9:
     resolution: {integrity: sha512-rpw6JPxK6Rfg1zLOYCSwle2GFOOsnjmDYDaBwEcwoOg4qlsIVCN789VkBZDJAGi4T07gI4YSutR43t9Zz4Lzuw==}
     dev: true
@@ -4230,6 +4242,14 @@ packages:
     resolution: {integrity: sha512-S0nG3CLEQiY/ILxqtztTWH/3iRRdyBLw6KMDxnKMchrtbj2OFmehVh0WUCfW3DUrIgx/qFrJPICrq4Z4sTR9UQ==}
     engines: {node: '>=0.10.0'}
     dev: true
+
+  /goober/2.0.41_csstype@2.6.18:
+    resolution: {integrity: sha512-kwjegMT5018zWydhOQlQneCgCtrKJaPsru7TaBWmTYV0nsMeUrM6L6O8JmNYb9UbPMgWcmtf+9p4Y3oJabIH1A==}
+    peerDependencies:
+      csstype: ^2.6.2
+    dependencies:
+      csstype: 2.6.18
+    dev: false
 
   /graceful-fs/4.2.8:
     resolution: {integrity: sha512-qkIilPUYcNhJpd33n0GBXTB1MMPp14TxEsEs0pTrsSVucApsYzW5V+Q8Qxhik6KU3evy+qkAAowTByymK0avdg==}
@@ -5848,13 +5868,11 @@ packages:
 
   /nanocolors/0.1.12:
     resolution: {integrity: sha512-2nMHqg1x5PU+unxX7PGY7AuYxl2qDx7PSrTRjizr8sxdd3l/3hBuWWaki62qmtYm2U5i4Z5E7GbjlyDFhs9/EQ==}
-    dev: true
 
   /nanoid/3.1.25:
     resolution: {integrity: sha512-rdwtIXaXCLFAQbnfqDRnI6jaRHp9fTcYBjtFKE8eezcZ7LuLjhUaQGNeMXf1HmRoCH32CLz6XwX0TtxEOS/A3Q==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
-    dev: true
 
   /nanomatch/1.2.13:
     resolution: {integrity: sha512-fpoe2T0RbHwBTBUOftAfBPaDEi06ufaUai0mE6Yn1kacc3SnTErfb/h+X94VXzI64rKFHYImXSvdwGGCmwOqCA==}
@@ -6550,12 +6568,13 @@ packages:
       postcss: 6.0.1
     dev: true
 
-  /postcss-nested/5.0.6:
+  /postcss-nested/5.0.6_postcss@8.3.7:
     resolution: {integrity: sha512-rKqm2Fk0KbA8Vt3AdGN0FB9OBOMDVajMG6ZCf/GoHgdxUJ4sBFp0A/uMIRm+MJUdo33YXEtjqIz8u7DAp8B7DA==}
     engines: {node: '>=12.0'}
     peerDependencies:
       postcss: ^8.2.14
     dependencies:
+      postcss: 8.3.7
       postcss-selector-parser: 6.0.6
     dev: true
 
@@ -6755,7 +6774,6 @@ packages:
       nanocolors: 0.1.12
       nanoid: 3.1.25
       source-map-js: 0.6.2
-    dev: true
 
   /posthtml-parser/0.4.2:
     resolution: {integrity: sha512-BUIorsYJTvS9UhXxPTzupIztOMVNPa/HtAm9KHni9z6qEfiJ1bpOBL5DfUOL9XAc3XkLIEzBzpph+Zbm4AdRAg==}
@@ -7533,6 +7551,14 @@ packages:
       use: 3.1.1
     dev: true
 
+  /solid-icons/0.3.2_solid-js@1.1.5:
+    resolution: {integrity: sha512-pS5HkaI0nVLxAXQ+JVIz9hIJy4COO+3dLptP+3ifHoX1FvTU//3E8/G0PQjUCIHrscgqantGtmazGKWjsnNE3Q==}
+    peerDependencies:
+      solid-js: '*'
+    dependencies:
+      solid-js: 1.1.5
+    dev: false
+
   /solid-jest/0.1.1_98c3189e14dfd97cf1b067144a1b92ad:
     resolution: {integrity: sha512-r9ZUY8qN0WaLjD29hmNl90REKt7J2uT2BuQsnto+1k5YqsrLqqtVBDGAZXOLvMdNBc48J7DjM4sXzczDt3HdJg==}
     peerDependencies:
@@ -7551,10 +7577,19 @@ packages:
     resolution: {integrity: sha512-cwMNe1U/1bqCTMco2za6LDU66jDn/57m5kfrDUhW3ls9YIbaREdktqPFGULrill22qyoFDngEg5hgm6a6vf6wg==}
     dev: true
 
+  /solid-styled-components/0.27.3_solid-js@1.1.5:
+    resolution: {integrity: sha512-0TXTNeLp4zn6xyuKgNKgcuIjCzxnIyUtTSbOPC6k5/2F5REarGyJMCp00NToRfaOJskXk+ERcntNSew5SznN3g==}
+    peerDependencies:
+      solid-js: ^1.0.0
+    dependencies:
+      csstype: 2.6.18
+      goober: 2.0.41_csstype@2.6.18
+      solid-js: 1.1.5
+    dev: false
+
   /source-map-js/0.6.2:
     resolution: {integrity: sha512-/3GptzWzu0+0MBQFrDKzw/DvvMTUORvgY6k6jd/VS6iCR4RDTKWH6v6WPwQoUO8667uQEf9Oe38DxAYWY5F/Ug==}
     engines: {node: '>=0.10.0'}
-    dev: true
 
   /source-map-resolve/0.5.3:
     resolution: {integrity: sha512-Htz+RnsXWk5+P2slx5Jh3Q66vhQj1Cllm0zvnaY98+NFx+Dv2CF/f5O/t8x+KaNdrdIAsruNzoh/KpialbqAnw==}
@@ -7874,7 +7909,7 @@ packages:
     resolution: {integrity: sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==}
     dev: true
 
-  /tailwindcss/2.2.15:
+  /tailwindcss/2.2.15_postcss@8.3.7:
     resolution: {integrity: sha512-WgV41xTMbnSoTNMNnJvShQZ+8GmY86DmXTrCgnsveNZJdlybfwCItV8kAqjYmU49YiFr+ofzmT1JlAKajBZboQ==}
     engines: {node: '>=12.13.0'}
     hasBin: true
@@ -7903,9 +7938,10 @@ packages:
       node-emoji: 1.11.0
       normalize-path: 3.0.0
       object-hash: 2.2.0
+      postcss: 8.3.7
       postcss-js: 3.0.3
       postcss-load-config: 3.1.0
-      postcss-nested: 5.0.6
+      postcss-nested: 5.0.6_postcss@8.3.7
       postcss-selector-parser: 6.0.6
       postcss-value-parser: 4.1.0
       pretty-hrtime: 1.0.3
